@@ -1,0 +1,46 @@
+{
+  "tool": "bsc-approval-risk-scorer",
+  "version": "1.0.0",
+  "chain": "BSC (56)",
+  "wallet": "0xaefe73bf42f925dc704173db66428a1c8da95ae7",
+  "headBlock": 133636031,
+  "score": 100,
+  "band": "Low risk",
+  "totalDeduction": 0,
+  "factors": {
+    "unlimited": {
+      "count": 0,
+      "deduction": 0,
+      "detail": []
+    },
+    "unknownSpender": {
+      "count": 0,
+      "deduction": 0,
+      "detail": []
+    },
+    "approvalCount": {
+      "count": 0,
+      "deduction": 0,
+      "detail": "0 active approvals (5 free, 0 counted)"
+    },
+    "stale": {
+      "count": 0,
+      "deduction": 0,
+      "detail": "age unknown (event scan unavailable)"
+    },
+    "dust": {
+      "count": 0,
+      "deduction": 0,
+      "detail": []
+    }
+  },
+  "approvals": [],
+  "topActions": [],
+  "coverage": {
+    "eventScan": "event scan failed: limit exceeded",
+    "curatedPairs": 0,
+    "eventPairs": 0,
+    "note": "Event scan unavailable (public RPC rate limits eth_getLogs from this network). Coverage is the curated token x known-spender matrix only — approvals to unknown spenders older than the scan window may be missed. Re-run from a network with a full RPC, or widen with --tokens, for fuller coverage."
+  },
+  "disclaimer": "Read-only audit. Revoke calldata is informational — verify the spender and token yourself before revoking anything, and never sign a transaction you do not understand."
+}
